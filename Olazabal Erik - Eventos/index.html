@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olazabal Erik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .alumBoots {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        div {
+            padding: 10px;
+        }
+        .divisorApro {
+            background-color: rgb(6, 233, 18);
+        }
+        .divisorDes {
+            background-color: rgb(245, 49, 0);
+        }
+    </style>
+</head>
+<body>
+        <div class="card text-center w-50 m-auto">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+            <h1 class="card-title">Bienvenido al Promediador</h1>
+            <p class="card-text">Para comenzar aprete en el botón</p>
+            <a href="#miFormulario" class="btn btn-primary">Vamos</a>
+            </div>
+            <div class="card-footer text-muted">Olazabal Erik --- Eventos</div>
+        </div>
+        <br><br>
+<div class="d-flex">
+    <!-- Función para añadir un alumno -->
+    <div class="nuevoUsuario alumBoots m-2 bg-secondary bg-gradient bg-opacity-25">
+    <h2>Crear Nuevo usuario</h2>
+    <form id="miFormulario"> 
+        <label for="formNombre">Ingrese su nombre</label>
+        <input id="formNombre" class="form-control w-auto " type="text">
+        <br><br>
+
+        <label for="formApellido">Ingrese su Promedio</label>
+        <input id="formApellido"  class="form-control w-auto " type="text">
+        <br><br>
+        <button class="btn btn-primary">Añadir</button>
+    </form>
+    </div>
+
+    <!-- Función para Promediar -->
+    <div class="promedi3 alumBoots m-2 bg-secondary bg-gradient bg-opacity-25">
+        <h2>Promedio para 3 notas</h2>
+        <form id="prom3notas"> 
+            <label for="promNombre">Ingrese su nombre</label>
+            <input id="promNombre" class="form-control w-auto " type="text">
+            <br><br>
+            <label for="promNota1">Ingrese tu primer nota </label>
+            <input id="promNota1"  class="form-control w-auto " type="text">
+            <br><br>
+            <label for="promNota2">Ingrese su segunda nota</label>
+            <input id="promNota2"  class="form-control w-auto " type="text">
+            <br><br>
+            <label for="promNota3">Ingrese su segunda nota</label>
+            <input id="promNota3"  class="form-control w-auto " type="text">
+            <br><br>
+            <p><input type="button" value="calcular" class="btn btn-primary" onclick="promediodea3()" ></p>
+            <p id="Promedio"></p>
+        </form>
+        </div>
+
+        <!-- Función para eliminar un alumno -->
+        <div class="eliminarAlumno alumBoots m-2 bg-secondary bg-gradient bg-opacity-25 h-50">
+            <h2>Eliminar un Alumno</h2>
+            <form id="formEliminar"> 
+                <label for="formNombre">Ingrese el nombre del alumno</label>
+                <input id="formNombre" class="form-control w-auto " type="text">
+                <br><br>
+                <button class="btn btn-primary" onclick="formEliminar1()">Eliminar Alumno</button>
+            </form>
+            </div>
+
+            <!-- Función para saber -->    
+            <div class="nuevoUsuario alumBoots m-2 bg-secondary bg-gradient bg-opacity-25 h-25">
+                <h2>Ver aprobados y Desaprobados</h2>
+                <form id="formBuscar"> 
+                    <br><br>
+                    <button class="btn btn-primary" onclick="verNotas()" >Ver las Calificaciones</button>
+                </form>
+                </div>
+    </div>  
+    <div class="alumBoots" id="contenedorBoots"></div>
+    <div class="alumBoots" id="contenedorApro"></div>
+    <div class="alumBoots" id="contenedorDes"></div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/promediador.js"></script>
+</body>
+</html>
