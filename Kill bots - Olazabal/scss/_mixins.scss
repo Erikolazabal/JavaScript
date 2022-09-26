@@ -1,0 +1,42 @@
+
+// mixins
+@mixin d-footer(){
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+//maps
+$colors:(
+    'uno':hsl(152, 69%, 31%),
+    'dos':hsl(0, 0%, 73%),
+    'tres':hsl(355, 100%, 16%),
+    'cuatro':rgb(1 30 56 / 100%),
+    'cinco':rgb(255, 255, 255),
+    'seis':hsl(0, 0%, 0%),
+);
+
+.bg-colors{
+	background-color: map-get($map:$colors, $key: 'cinco')
+}
+
+//extend
+.texto-inscrip {
+    @extend .inscripciones-title;
+    padding: 11px;
+}
+
+.reglas-text2{
+    @extend .reglas-text;
+        list-style: lower-alpha;
+}
+
+.restricciones-web {
+    @extend .reglas-web;
+    padding: 10px !important;
+    text-align: start;
+}
+
+//math
+//hay varios math que estan puestos en _main.scss (que use para los font-size)
