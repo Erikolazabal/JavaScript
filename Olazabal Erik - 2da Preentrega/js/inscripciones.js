@@ -19,7 +19,7 @@ if(localStorage.getItem("inscriptos")) {
     }
 }
 
-const formularioInscrip = document.getElementById("formularioInscrip");
+const formularioInscrip = document.getElementById("enviarInscrip");
 
 formularioInscrip.addEventListener("submit", (e) => {
     e.preventDefault();
