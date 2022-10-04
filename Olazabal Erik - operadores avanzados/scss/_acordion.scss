@@ -1,0 +1,47 @@
+/* --- accordion bootstrap ----- */
+
+.accordion-button {
+    background-color: $bg-amarillo;
+    border-radius: 50px;
+}
+
+.accordion-button {
+    background-color: #50000700;
+    border-radius: 50px;
+    justify-content: center;
+}
+
+.accordion-flush .accordion-item:first-child {
+    margin-bottom: 10px;
+}
+
+.accordion-item:not(:first-of-type) {
+    margin-bottom: 10px;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.accordion-flush .accordion-item:first-child {
+    border-radius: 30px;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 30px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 30px;
+}
+
+.accordion-button::after {
+    width: 0;
+    margin-left: 0;
+    content: 0;
+    background-image: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color:$bg-amarillo;
+    background-color:$bg-azul;
+    box-shadow: none;
+}
