@@ -1,0 +1,175 @@
+/* ---- grid DE INDEX ---- */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 100% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav"
+    "header"
+    "masinfo"
+    "main"
+    "footer";
+}
+
+#g-nav {
+    grid-area: nav;
+}
+
+#g-header {
+    grid-area: header;
+}
+
+#masinfo {
+    grid-area: masinfo;
+    display: block;
+    bottom: 38px;
+    height: 60px;
+}
+
+#g-main {
+    grid-area: main;
+}
+
+#g-footer {
+    grid-area: footer;
+}
+
+/*------ Productos ------*/
+/*------ grid de productos------*/
+
+.contenedor{
+    display: grid;
+	grid-template-columns: 100% 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav"  
+    "subnav"
+    "aside"
+	"productos"
+	"footer";
+}
+
+#g-nav{
+    grid-area: nav;
+}
+
+#sub-nav{
+	grid-area: subnav;
+    
+}
+
+#productos{
+	grid-area: productos;
+    margin-bottom: 20px;
+    
+}
+
+#aside-r{
+	grid-area: aside;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+
+/*------ reglamento ------*/
+/*------ grid de reglamento ------*/
+
+.grid-contenedor-reglamento{
+    display: grid;
+	grid-template-columns: 100% 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav"  
+    "subnav"
+    "info"
+    "aside"
+    "main"
+	"footer";
+}
+
+#g-nav{
+    grid-area: nav;
+}
+
+#header-gridr{
+	grid-area: subnav;
+    
+}
+
+#main-gridr{
+	grid-area: main;
+    margin-bottom: 30px;
+}
+
+#info-regla{
+    grid-area: info;
+}
+
+#aside-gridr{
+	grid-area: aside;
+}
+
+#g-footer{
+	grid-area: footer;
+}
+
+/*------ Inscripciones ------*/
+/*------ grid de inscripciones ------*/
+
+.body-inscrip{
+    background-color: #738b95;
+}
+.grid-inscripciones{
+    display: grid;
+	grid-template-columns: 100% 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav"  
+    "main"
+	"footer";
+}
+
+#g-nav{
+    grid-area: nav;
+}
+
+
+#main-grid-ins{
+	grid-area: main;
+    position: relative;
+}
+
+#g-footer{
+	grid-area: footer;
+}
+
+/*------ contacto ------*/
+/*------ grid de contacto ------*/
+
+.grid-contacto{
+    display: grid;
+	grid-template-columns: 100% 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav"  
+    "main"
+    "mapa"
+	"footer";
+}
+
+#g-nav{
+    grid-area: nav;
+}
+
+#main-contact{
+	grid-area: main;
+    
+}
+#mapa{
+    grid-area: mapa;
+}
+#g-footer{
+	grid-area: footer;
+}
